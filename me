@@ -1,0 +1,260 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+export default function MattressGuide() {
+  return (
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="space-y-2">
+            <div className="inline-block rounded-lg bg-red-100 px-3 py-1 text-sm text-red-600">Mattress Guide</div>
+            <h2 className="text-3xl font-extrabold tracking-tighter sm:text-5xl">Find Your Perfect Mattress</h2>
+            <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              We offer a variety of mattress types, qualities, and sizes to suit your needs. Use this guide to help you
+              choose.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <Tabs defaultValue="brands">
+            <TabsList className="grid w-full grid-cols-1 md:grid-cols-3">
+              <TabsTrigger value="brands">Brands</TabsTrigger>
+              <TabsTrigger value="types">Types & Qualities</TabsTrigger>
+              <TabsTrigger value="sizes">Sizes & Thickness</TabsTrigger>
+            </TabsList>
+            <TabsContent value="brands" className="mt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Superfoam</CardTitle>
+                    <CardDescription>Premium comfort and durability</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-500">
+                      Superfoam mattresses are known for their exceptional quality and comfort. They offer a perfect
+                      balance of support and softness, making them ideal for all sleeping positions.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Morning Glory</CardTitle>
+                    <CardDescription>Reliable comfort at affordable prices</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-500">
+                      Morning Glory mattresses provide reliable comfort at affordable prices. They are perfect for those
+                      looking for quality without breaking the bank.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Ndovu</CardTitle>
+                    <CardDescription>Extra firm support for maximum durability</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-500">
+                      Ndovu mattresses are designed for those who prefer extra firm support. They are built to last and
+                      provide excellent back support.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Moko</CardTitle>
+                    <CardDescription>Balanced comfort for quality sleep</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-500">
+                      Moko mattresses offer a balanced comfort level that's perfect for most sleepers. They combine
+                      quality materials with thoughtful design.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>Tuffoam</CardTitle>
+                    <CardDescription>Durable design for long-lasting comfort</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-500">
+                      Tuffoam mattresses are built to last with durable materials and construction. They provide
+                      consistent comfort night after night.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </TabsContent>
+            <TabsContent value="types" className="mt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Mattress Types</h3>
+                  <Card className="mb-6">
+                    <CardHeader>
+                      <CardTitle>Quilted Mattresses</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Quilted mattresses feature a decorative stitched pattern on the top layer. This not only
+                        enhances the appearance but also provides additional comfort and helps keep the filling in
+                        place.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Plain Mattresses</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Plain mattresses have a simple, flat surface without quilting. They offer firm support and are
+                        often more affordable while still providing good comfort.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Mattress Qualities</h3>
+                  <Card className="mb-4">
+                    <CardHeader>
+                      <CardTitle>Standard</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Our standard mattresses provide reliable comfort at an affordable price point. Perfect for guest
+                        rooms or budget-conscious shoppers.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="mb-4">
+                    <CardHeader>
+                      <CardTitle>Medium Duty</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Medium duty mattresses offer a balance of comfort and support. They're ideal for everyday use
+                        and suitable for most sleepers.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="mb-4">
+                    <CardHeader>
+                      <CardTitle>Premium</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Premium mattresses feature enhanced comfort layers and superior materials for a luxurious sleep
+                        experience.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Heavy Duty</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Heavy duty mattresses are designed for maximum durability and support. They're perfect for those
+                        who need extra firmness or have specific back support requirements.
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </TabsContent>
+            <TabsContent value="sizes" className="mt-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Mattress Sizes</h3>
+                  <Card className="mb-4">
+                    <CardHeader>
+                      <CardTitle>3x6 (Single)</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Dimensions: 3 feet x 6 feet (91cm x 183cm)
+                        <br />
+                        Ideal for: Children, teenagers, or adults with limited space
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="mb-4">
+                    <CardHeader>
+                      <CardTitle>4x6 (Small Double)</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Dimensions: 4 feet x 6 feet (122cm x 183cm)
+                        <br />
+                        Ideal for: Single adults who want more space or couples with limited room
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card className="mb-4">
+                    <CardHeader>
+                      <CardTitle>5x6 (Queen)</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Dimensions: 5 feet x 6 feet (152cm x 183cm)
+                        <br />
+                        Ideal for: Couples who want more space or individuals who like to spread out
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>6x6 (King)</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Dimensions: 6 feet x 6 feet (183cm x 183cm)
+                        <br />
+                        Ideal for: Couples who want maximum space or families with children who occasionally share the
+                        bed
+                      </p>
+                    </CardContent>
+                  </Card>
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-4">Mattress Thickness</h3>
+                  <Card className="mb-6">
+                    <CardHeader>
+                      <CardTitle>6 Inch</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Our 6-inch mattresses provide a standard level of comfort and support. They're suitable for
+                        guest rooms, children's beds, or those who prefer a firmer sleeping surface.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>8 Inch</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-500">
+                        Our 8-inch mattresses offer enhanced comfort with additional padding. They provide better
+                        pressure relief and are ideal for primary bedrooms or those seeking extra comfort.
+                      </p>
+                    </CardContent>
+                  </Card>
+                  <div className="mt-6 p-4 bg-red-50 rounded-lg">
+                    <h4 className="font-semibold text-red-600 mb-2">Custom Sizes Available</h4>
+                    <p className="text-sm text-gray-700">
+                      Need a special size? We can create custom-sized mattresses to fit your specific requirements.
+                      Contact us for more information and pricing.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
+        </div>
+      </div>
+    </section>
+  )
+}
